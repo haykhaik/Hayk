@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  width: 100%;
+  height: 700px;
+  background-image: url("Hasmik\ Jurg.jpg");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header img {
+  position: absolute;
+  left: 20%;
+  top: 20px;
+}
+header div {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 0;
+  background-color: #eff1f2;
+  text-align: center;
+}
+header h1 {
+  font-size: 40px;
+  letter-spacing: 0.3em;
+
+  color: #f6f5f1;
+}
+header h3 {
+  font-size: 23px;
+  letter-spacing: 0.3em;
+
+  color: #f6f5f1;
+}
+
+/***** Main *****/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+}
+.left h2,
+.right h2 {
+  color: #0e2334;
+  letter-spacing: 0.25em;
+  border-bottom: 3px solid #a8c5de;
+  padding-bottom: 15px;
+  font-size: 35px;
+  width: 100%;
+}
+.left p,
+.right p {
+  color: #234d70;
+  font-size: 20px;
+}
+.left button {
+  /* width: 130px; */
+  border-radius: 40px;
+  border: none;
+  background-color: #fff;
+  padding: 10px 23px;
+  border: 2px solid #a8c5de;
+}
+.right img {
+  width: 354px;
+  height: 459px;
+  object-fit: cover;
+  box-shadow: 30px 30px 1px #0e2334;
+}
+
+.right h2 {
+  margin-bottom: 20px;
+}
+/***** End Main *****/
+
+/***** Footer *****/
+footer {
+  width: 100%;
+  height: 400px;
+  background-image: url("./images/2aae23_5b7b3d160f9b484d855984dc81a1c441~mv2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #0e2334;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer h2 {
+  color: white;
+  font-size: 40px;
+}
+.time {
+  width: 320px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #0f2840;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.top,
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+footer ~ p {
+  background-color: #0e2334;
+  padding-top: 50px;
+
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+/***** End Footer *****/
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 600px;
+  height: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 600px;
+  border: 2px solid black;
+  height: 400px;
+}
+
+.gmap_iframe {
+  width: 600px !important;
+  height: 400px !important;
+}
+
+@media (max-width: 950px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  header h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  header h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+}
+@media (max-width: 680px) {
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 80%;
+        height: 400px;
+      }
+      
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 100%;
+        border: 2px solid black;
+        height: 400px;
+      }
+      
+      .gmap_iframe {
+        width: 100% !important;
+        height: 400px !important;
+      }
+      .right {
+        align-items: center;
+        text-align: center;
+      }
+}
